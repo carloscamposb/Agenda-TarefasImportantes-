@@ -6,8 +6,8 @@ const listaDeAtividades = document.getElementById("listaDeAtividades");
 const activities = [];
 
 // Função para adicionar uma nova atividade
-function addActivity(data) {
-    activities.push(data);
+function addActivity(dado) {
+    activities.push(dado);
     displayActivities();
 }
 
@@ -19,9 +19,8 @@ function displayActivities() {
             <li>${activity.disciplina} : ${activity.atividade} - ${activity.data}
                 <button onclick="editActivity(${index})">Editar</button>
                 <button onclick="deleteActivity(${index})">Excluir</button>
-            </li>
-        `;
-    });
+            </li>`;
+});
 }
 
 // Função para editar uma atividade
