@@ -1,0 +1,130 @@
+
+/* Definição das cores */
+:root {
+    --cor-primaria: #041d2b;
+    --cor-secundaria: #3132aa;
+    --cor-basica: #eadedd;
+    --cor-basica-escura: #bf5147;
+    --cor-pontual: #bdd0fa;
+    --cor-lista: #010c12;
+    --cor-campo:#2e5a57;
+  }
+
+  /* estilização geral  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-basica);
+}
+
+body{
+background-color: var(--cor-primaria);  
+background-image: url('./img/astronauta.jpg');
+background-repeat: no-repeat;
+background-size: 28% 50%;
+
+background-attachment: fixed;
+background-position: left center; 
+height: 100vh;
+}
+
+
+/* estilização do título */
+.title{
+  font-size: 800;
+  margin: 10px auto;
+  text-align: center;
+  padding-top: 20px;
+  color: #eadedd;
+}
+
+
+.contaner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  background-color: var(--cor-campo);
+  font-size: 600;
+  font-weight: bolder;
+}
+
+.topic{
+  color: var(--cor-basica);
+}
+
+.listSection{
+  margin-top: 80px;
+}
+
+#listaDeAtividades{
+  background-color: var(--cor-lista);
+  padding: 40px;
+  border-radius: 5px;
+}
+
+
+
+/* estilização do formulário */
+form{
+  padding-top: 30px;
+
+}
+
+
+/* estilização dos inputs */
+input[type="text"]{
+  width: 80%;
+  min-width: 400px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid var(--cor-pontual);
+  border-radius: 5px;
+}
+
+input[type="date"]{
+  min-width: 400px;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid var(--cor-pontual);
+  border-radius: 5px;
+}
+
+/* estilização dos botões */
+
+button {
+  background: var(--cor-secundaria);
+  padding: 6px 12px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover{
+  background: var(--cor-secundaria);
+  color: var(--cor-basica);
+}
+
+
+.button-edit{
+margin-right: 20px;
+margin-left: 20px;
+
+}
+
+.button-edit , .button-delete{
+font-weight: bolder;
+
+}
+

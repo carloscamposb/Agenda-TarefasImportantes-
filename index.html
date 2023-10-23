@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title> CRUD : PLANEJAMENTO </title>
+</head>
+    <body> 
+    
+        <h1 class="title"> Agendamento de atividades </h1>
+        
+        <section class="contaner">
+            <form autocomplete="off" id="FormAgenda">    <!-- Formulário com função atribuida-->
+                <div>
+                    <label for="data"> <b class="topic ">Data</b> </label> <br>
+                    <input type="date" name ="data" id="data" require>
+                </div>
+                <div>
+                    <label for="disciplina" > <b class="topic"> Disciplina </b> </label> <br>
+                    <input type="text" name ="disciplina" id="disciplina" require>
+                </div>
+            
+                <div>
+                    <label for="atividade"> <b class="topic">Atividade</b> </label> <br>
+                    <input type="text" name ="atividade" id="atividade" require>
+                </div>
+            
+
+                <div class="formButton"> <!-- Botões da sessão form -->
+                <button type="button" onclick="salvarDado()"> <b>Salvar</b> </button>
+                <button type="button" id="btnAtualizar" onclick="salvarDado()"  style="display: none;"> <b>Atualizar</b> </button>
+                </div>
+        
+            </form>
+
+          <div class="listSection">
+            <h2>Atividades Marcadas</h2>
+            <ol id="listaDeAtividades"></ol>
+          </div>  
+          
+          <div class="circulos"></div>     
+        </section>      
+                
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
