@@ -117,13 +117,13 @@ button:hover{
 }
 
 
-.button-edit{
+.buttonEdit{
 margin-right: 20px;
 margin-left: 20px;
 
 }
 
-.button-edit , .button-delete{
+.buttonEdit , .buttonDelete{
 font-weight: bolder;
 
 }
