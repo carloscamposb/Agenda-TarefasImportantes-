@@ -11,13 +11,15 @@
     <body> 
     
         <h1 class="title"> Agendamento de atividades </h1>
-        
-        <section class="contaner">
-            <form autocomplete="off" id="FormAgenda">    <!-- Formulário com função atribuida-->
+     
+        <section class="contaner">  <!-- conteudo total -->
+            <form autocomplete="off" id="FormAgenda">    <!-- Formulário -->
+                
                 <div>
                     <label for="data"> <b class="topic ">Data</b> </label> <br>
                     <input type="date" name ="data" id="data" require>
                 </div>
+                
                 <div>
                     <label for="disciplina" > <b class="topic"> Disciplina </b> </label> <br>
                     <input type="text" name ="disciplina" id="disciplina" require>
@@ -30,18 +32,17 @@
             
 
                 <div class="formButton"> <!-- Botões da sessão form -->
-                <button type="button" onclick="salvarDado()"> <b>Salvar</b> </button>
-                <button type="button" id="btnAtualizar" onclick="salvarDado()"  style="display: none;"> <b>Atualizar</b> </button>
+                <button type="button" onclick="salvarDado()"> <b>Salvar</b> </button> <!-- Chamada de função-->
+                <button type="button" id="btnAtualizar" onclick="salvarDado()"  style="display: none;"> <b>Atualizar</b> </button>  <!-- Chamada de função-->
                 </div>
         
             </form>
 
           <div class="listSection">
             <h2>Atividades Marcadas</h2>
-            <ol id="listaDeAtividades"></ol>
+            <ol id="listaDeAtividades"></ol> <!-- Origem da lista -->
           </div>  
-          
-          <div class="circulos"></div>     
+              
         </section>      
                 
         <script type="text/javascript" src="./script.js"></script>
