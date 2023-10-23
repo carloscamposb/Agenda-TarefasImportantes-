@@ -17,8 +17,8 @@ function displayActivities() {
     activities.forEach((activity, index) => {
         listaDeAtividades.innerHTML += `
             <li>${activity.disciplina} : ${activity.atividade} - ${activity.data}
-                <button onclick="editActivity(${index})">Editar</button>
-                <button onclick="deleteActivity(${index})">Excluir</button>
+                <button class=buttonEdit  onclick="editActivity(${index})">Editar</button>
+                <button class=buttonDelete onclick="deleteActivity(${index})">Excluir</button>
             </li>`;
 });
 }
